@@ -11,7 +11,7 @@ const postsContainer = createNewElement('div', 'posts-container');
 mainContainer.appendChild(postsContainer);
 bodyEl.insertBefore(mainContainer, bodyEl.firstChild);
 
-const url = 'http://localhost:7070';
+const url = 'https://ahj-homework-11-2.herokuapp.com';
 
 const response = ajax.getJSON(`${url}/posts/latest`).pipe(
   map((result) => {
